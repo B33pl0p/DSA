@@ -1,0 +1,17 @@
+//SUM OF FIRST N NATURAL NUMBERS USING RECURSION
+#include<stdio.h>
+int sum(int n){
+    if(n==0){
+        return 0;
+    }
+    else {
+        return n + sum(n-1);
+    }
+ 
+}
+int main(){
+    int n;
+    printf("Enter the value of n ");
+    scanf("%d",&n);
+    printf("Sum upto %d terms is %d",n,sum(n));
+}
