@@ -114,13 +114,16 @@ void InsAtPos()
 
     for (i = 0; i < pos - 1; i++)
     {
-        ptr = ptr->next;
+       
         if (ptr == NULL)
         {
             system("clear");
             printf("Invalid position\n");
             prompt();
         
+        }
+        else  {
+            ptr = ptr->next;
         }
     }
     newnode->next = ptr->next;
@@ -139,7 +142,6 @@ void DelAtBeginning()
         
     }
     printf("%d deleted\n", ptr->info);
-    ptr = head;
     head = ptr->next;
     free(ptr);
 }
@@ -182,7 +184,7 @@ void DelAtPos()
     ptr = head;
     if (head == NULL)
     {
-         system("clear");
+        system("clear");
         printf("EMpty list");
        prompt();
     }

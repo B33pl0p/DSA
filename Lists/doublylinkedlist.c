@@ -154,13 +154,16 @@ void InsAtPos()
     ptr = head;
     for (i = 0; i < pos - 1; i++)
     {
-        ptr = ptr->next;
+       
         if (ptr == NULL)
         {
 
             system("clear");
             printf("Invalid position\n");
              return;
+        }
+        else {
+             ptr = ptr->next;
         }
     }
     newnode->next = ptr->next;

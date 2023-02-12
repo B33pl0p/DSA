@@ -8,10 +8,7 @@ void push(char x)
 }
 char pop()
 {
-    if (top == -1)
-        return -1;
-    else
-        return stack[top--];
+   return stack[top--];
 }
 int priority(char x)
 {
@@ -31,6 +28,7 @@ int main()
     printf("Enter the expression: ");
     scanf("%s", expression);
     e = expression;
+
     while (*e != '\0')
     {
         if isalnum (*e)
