@@ -1,3 +1,4 @@
+//hcf using recursion
 #include<stdio.h>
 int hcf(int n1,int n2){
     if(n2 != 0){

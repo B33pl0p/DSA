@@ -1,3 +1,4 @@
+//string palindrome or not
 #include<stdio.h>
 #include<string.h>
 int ispalindrome(char str[100] , int start, int end){
