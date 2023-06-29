@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-char stack[100];
+char stack[200];
 int top = -1;
 void push(char x)
 {
