@@ -12,7 +12,7 @@ int main()
     int choice;
     while (1)
     {
-        printf("\n1. Insert to queue\n");
+        printf("\n1. Insert into queue\n");
         printf("2. Delete from queue\n");
         printf("3. Display queue items\n");
         printf("4. Exit\n");
